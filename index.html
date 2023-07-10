@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversor de Monedas Nacionales</h1>
+        <hr>
+        <div class="form">
+            <label class="title1">Pesos CLP</label>
+            <input type="number" id="input" placeholder="Ingrese el monto en CPL" autocomplete="off">
+            <label>Moneda a convertir:</label>
+            <select name="select" id="select">
+                <option selected value="0">Seleccione Moneda</option>
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+                <option value="uf">UF</option>
+            </select>
+            <button id="button">Buscar</button>
+            <div class="result">
+                <p>...</p>
+            </div>
+        </div>
+        <div class="graphic">
+            <h1>Gráfico</h1>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="mindicador.json"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
