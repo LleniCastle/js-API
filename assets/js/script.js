@@ -8,7 +8,7 @@ const apiURL = "https://mindicador.cl/api/";
 button.addEventListener('click', () => {
     let value = Number(valueSelect.value);
     if (value == isNaN || value == '0') {
-        alert('Por favor, ingrese informacion para realizar el cambio.');
+        alert('Por favor, ingrese información para realizar el cambio.');
     } else {
         getCoins();
     }
@@ -54,7 +54,7 @@ async function getAndCreateDataToChart(mindicador) {
     });
     const datasets = [
         {
-            label: `El valor del ${mindicador} últimos 10 días`,
+            label: `El valor del ${mindicador} en los últimos 10 días`,
             width: '500px;',
             borderColor: 'turquoise',
             fontSize: '50px;',
@@ -77,5 +77,3 @@ async function render(mindicador) {
 }
 
 render(valueSelect.value);
-
-//revisar porque sale fecha al buscar y revisar validacion cuando no se agrega selectvalue/ revisar catch
